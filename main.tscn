@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://57gj77senilp"]
+
+[ext_resource type="Script" uid="uid://5mlj4ccldtlx" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://2r5c7kyi2dgo" path="res://question.gd" id="2_0xm2m"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_ig7tw")
+
+[node name="Question" type="Node2D" parent="."]
+script = ExtResource("2_0xm2m")
+
+[node name="No" type="Button" parent="Question"]
+offset_left = 225.0
+offset_top = 68.0
+offset_right = 388.0
+offset_bottom = 198.0
+text = "NO"
+icon_alignment = 1
+
+[node name="Wrong" type="Node2D" parent="Question/No"]
+visible = false
+
+[node name="Yes" type="Button" parent="Question"]
+offset_left = 773.0
+offset_top = 74.0
+offset_right = 935.0
+offset_bottom = 209.0
+text = "YES"
+
+[node name="Correct" type="Node2D" parent="Question/Yes"]
+visible = false
