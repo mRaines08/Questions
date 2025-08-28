@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://d11yswttxi5k2"]
+
+[ext_resource type="Script" uid="uid://c75q3m15v1mwq" path="res://wrong.gd" id="1_qfcvf"]
+
+[node name="Wrong" type="Node2D"]
+script = ExtResource("1_qfcvf")
+
+[node name="lblWrong" type="Label" parent="."]
+offset_left = 497.0
+offset_top = 157.0
+offset_right = 695.0
+offset_bottom = 246.0
+text = "Wrong :("
+
+[node name="btnAgainWrong" type="Button" parent="lblWrong"]
+layout_mode = 0
+offset_left = -45.0
+offset_top = 54.0
+offset_right = 110.0
+offset_bottom = 141.0
+text = "Play Again"
+
+[connection signal="button_down" from="lblWrong/btnAgainWrong" to="." method="_on_btn_again_wrong_button_down"]

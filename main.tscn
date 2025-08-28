@@ -29,3 +29,6 @@ text = "YES"
 
 [node name="Correct" type="Node2D" parent="Question/Yes"]
 visible = false
+
+[connection signal="button_down" from="Question/No" to="." method="_on_no_button_down"]
+[connection signal="button_down" from="Question/Yes" to="." method="_on_yes_button_down"]
