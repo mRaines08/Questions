@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp0wvn4nj48sx"]
+
+[ext_resource type="Script" uid="uid://c5ivaesg4xlf6" path="res://menu.gd" id="1_lti8b"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_lti8b")
+
+[node name="btnMath" type="Button" parent="."]
+offset_left = 74.0
+offset_top = 141.0
+offset_right = 448.0
+offset_bottom = 264.0
+text = "Math!"
+
+[node name="btnReading" type="Button" parent="."]
+offset_left = 474.0
+offset_top = 142.0
+offset_right = 846.0
+offset_bottom = 265.0
+text = "Reading!"
+
+[connection signal="button_down" from="btnMath" to="." method="_on_btn_math_button_down"]
