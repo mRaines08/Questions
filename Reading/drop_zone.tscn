@@ -8,6 +8,7 @@ size = Vector2(71, 71.5)
 [node name="drop_zone" type="StaticBody2D" groups=["droppable"]]
 constant_linear_velocity = Vector2(160, 160)
 script = ExtResource("1_h2xgt")
+metadata/wordType = ""
 
 [node name="zone_collision" type="CollisionShape2D" parent="."]
 position = Vector2(36, 36)

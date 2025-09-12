@@ -25,16 +25,19 @@ func _on_icon_area_mouse_exited() -> void:
 		
 #when droppable area enters the object
 #the parameters give the StaticBody2D the name body
-func _on_icon_area_area_entered(body:StaticBody2D) -> void:
+func _on_icon_area_area_entered(body:StaticBody2D):
+	print("ENTER")
 	#confirms the area is a droppable area
 	if body.is_in_group('droppable'):
 		is_inside_dropable = true
 		#change drop zone color for user feedback
 		body.modulate = Color(Color.REBECCA_PURPLE, 1)
 		body_ref = body
+		print(body_ref)
 		
 #when droppable area is exited
-func _on_icon_area_area_exited(body:StaticBody2D) -> void:
+func _on_icon_area_area_exited(body):
+	print("exit")
 	#confirms the area is a droppable area
 	if body.is_in_group('droppable'):
 		is_inside_dropable = false
