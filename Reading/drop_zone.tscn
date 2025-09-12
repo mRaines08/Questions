@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://oigcrjmioer"]
+
+[ext_resource type="Script" uid="uid://d13fohgcl2dom" path="res://Reading/drop_zone.gd" id="1_h2xgt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_354of"]
+size = Vector2(71, 71.5)
+
+[node name="drop_zone" type="StaticBody2D" groups=["droppable"]]
+constant_linear_velocity = Vector2(160, 160)
+script = ExtResource("1_h2xgt")
+
+[node name="zone_collision" type="CollisionShape2D" parent="."]
+position = Vector2(36, 36)
+shape = SubResource("RectangleShape2D_354of")
+
+[node name="bg" type="ColorRect" parent="."]
+offset_right = 72.0
+offset_bottom = 73.0

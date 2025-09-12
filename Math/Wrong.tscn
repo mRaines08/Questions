@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://d11yswttxi5k2"]
 
-[ext_resource type="Script" uid="uid://c75q3m15v1mwq" path="res://wrong.gd" id="1_qfcvf"]
+[ext_resource type="Script" uid="uid://c75q3m15v1mwq" path="res://Math/wrong.gd" id="1_uilo2"]
 
 [node name="Wrong" type="Node2D"]
-script = ExtResource("1_qfcvf")
+script = ExtResource("1_uilo2")
 
 [node name="lblWrong" type="Label" parent="."]
 offset_left = 497.0

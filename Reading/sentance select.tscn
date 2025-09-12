@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://6pwl41xps4vg"]
+
+[ext_resource type="Script" uid="uid://bajt4nrg26536" path="res://Reading/sentance_select.gd" id="1_qttfq"]
+[ext_resource type="PackedScene" uid="uid://oigcrjmioer" path="res://Reading/drop_zone.tscn" id="2_c5kpi"]
+[ext_resource type="PackedScene" uid="uid://d0vx2ea5gtpv3" path="res://Reading/draggable_icon.tscn" id="3_fw7uq"]
+
+[node name="SentanceSelect" type="Node2D"]
+script = ExtResource("1_qttfq")
+
+[node name="lbl_word1" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 167.0
+offset_right = 102.0
+offset_bottom = 190.0
+text = "word1"
+
+[node name="lbl_word2" type="Label" parent="."]
+offset_left = 166.0
+offset_top = 167.0
+offset_right = 244.0
+offset_bottom = 190.0
+text = "word2"
+
+[node name="lbl_word3" type="Label" parent="."]
+offset_left = 292.0
+offset_top = 167.0
+offset_right = 374.0
+offset_bottom = 190.0
+text = "word3"
+
+[node name="lbl_word4" type="Label" parent="."]
+offset_left = 410.0
+offset_top = 168.0
+offset_right = 490.0
+offset_bottom = 191.0
+text = "word4"
+
+[node name="lbl_word5" type="Label" parent="."]
+offset_left = 547.0
+offset_top = 163.0
+offset_right = 627.0
+offset_bottom = 186.0
+text = "word5"
+
+[node name="lbl_word6" type="Label" parent="."]
+offset_left = 695.0
+offset_top = 165.0
+offset_right = 772.0
+offset_bottom = 188.0
+text = "word6"
+
+[node name="drop_zone" parent="." instance=ExtResource("2_c5kpi")]
+position = Vector2(105, 306)
+
+[node name="draggable_icon" parent="." instance=ExtResource("3_fw7uq")]
+position = Vector2(378, 308)

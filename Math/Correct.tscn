@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://dji4gxr0hwrd3"]
 
-[ext_resource type="Script" uid="uid://dirwo104ph0ve" path="res://correct.gd" id="1_ro7jt"]
+[ext_resource type="Script" uid="uid://dirwo104ph0ve" path="res://Math/correct.gd" id="1_yqp7r"]
 
 [node name="Correct" type="Node2D"]
-script = ExtResource("1_ro7jt")
+script = ExtResource("1_yqp7r")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 480.0

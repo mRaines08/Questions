@@ -24,6 +24,6 @@ func _ready():
 
 func _on_lne_answer_text_submitted(new_text: String) -> void:
 	if $lneAnswer.text == str(sum):
-		get_tree().change_scene_to_file("res://Correct.tscn")
+		get_tree().change_scene_to_file("res://Math/Correct.tscn")
 	else:
-		get_tree().change_scene_to_file("res://Wrong.tscn")
+		get_tree().change_scene_to_file("res://Math/Wrong.tscn")

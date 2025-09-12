@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0vx2ea5gtpv3"]
+
+[ext_resource type="Texture2D" uid="uid://chfoyyet0ipm1" path="res://Reading/icon.svg" id="1_h6aar"]
+[ext_resource type="Script" uid="uid://c7gxg4eh3papo" path="res://Reading/draggable_icon.gd" id="1_wdkek"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wdkek"]
+size = Vector2(128, 63)
+
+[node name="draggable_icon" type="Node2D"]
+script = ExtResource("1_wdkek")
+
+[node name="icon" type="Sprite2D" parent="."]
+texture = ExtResource("1_h6aar")
+
+[node name="word" type="Label" parent="."]
+offset_left = -64.0
+offset_top = -33.0
+offset_right = 64.0
+offset_bottom = 31.0
+
+[node name="icon_area" type="Area2D" parent="."]
+
+[node name="icon_collision" type="CollisionShape2D" parent="icon_area"]
+shape = SubResource("RectangleShape2D_wdkek")
+
+[connection signal="area_entered" from="icon_area" to="." method="_on_icon_area_area_entered"]
+[connection signal="area_exited" from="icon_area" to="." method="_on_icon_area_area_exited"]
+[connection signal="mouse_entered" from="icon_area" to="." method="_on_icon_area_mouse_entered"]
+[connection signal="mouse_exited" from="icon_area" to="." method="_on_icon_area_mouse_exited"]
