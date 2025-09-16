@@ -11,9 +11,10 @@ script = ExtResource("1_h2xgt")
 metadata/wordType = ""
 
 [node name="zone_collision" type="CollisionShape2D" parent="."]
-position = Vector2(36, 36)
 shape = SubResource("RectangleShape2D_354of")
 
 [node name="bg" type="ColorRect" parent="."]
-offset_right = 72.0
-offset_bottom = 73.0
+offset_left = -36.0
+offset_top = -37.0
+offset_right = 36.0
+offset_bottom = 36.0

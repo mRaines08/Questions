@@ -23,10 +23,8 @@ func _on_icon_area_mouse_exited() -> void:
 		#scales sprite back to normal size
 		scale = Vector2(1,1)
 		
-#when droppable area enters the object
-#the parameters give the StaticBody2D the name body
-func _on_icon_area_area_entered(body:StaticBody2D):
-	print("ENTER")
+#runs when a body enters the icon area
+func _on_icon_area_body_entered(body: Node2D) -> void:
 	#confirms the area is a droppable area
 	if body.is_in_group('droppable'):
 		is_inside_dropable = true
@@ -34,10 +32,9 @@ func _on_icon_area_area_entered(body:StaticBody2D):
 		body.modulate = Color(Color.REBECCA_PURPLE, 1)
 		body_ref = body
 		print(body_ref)
-		
-#when droppable area is exited
-func _on_icon_area_area_exited(body):
-	print("exit")
+
+#runs when a body exits the icon area
+func _on_icon_area_body_exited(body: Node2D) -> void:
 	#confirms the area is a droppable area
 	if body.is_in_group('droppable'):
 		is_inside_dropable = false
