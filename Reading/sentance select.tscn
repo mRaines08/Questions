@@ -52,9 +52,6 @@ text = "word6"
 [node name="drop_zone" parent="." instance=ExtResource("2_c5kpi")]
 position = Vector2(43, 175)
 
-[node name="draggable_icon" parent="." instance=ExtResource("3_fw7uq")]
-position = Vector2(80, 236)
-
 [node name="drop_zone2" parent="." instance=ExtResource("2_c5kpi")]
 position = Vector2(186, 178)
 
@@ -69,3 +66,12 @@ position = Vector2(561, 177)
 
 [node name="drop_zone6" parent="." instance=ExtResource("2_c5kpi")]
 position = Vector2(718, 179)
+
+[node name="draggable_icon" parent="." instance=ExtResource("3_fw7uq")]
+position = Vector2(42, 289)
+
+[node name="draggable_icon2" parent="." instance=ExtResource("3_fw7uq")]
+position = Vector2(189, 290)
+
+[node name="draggable_icon3" parent="." instance=ExtResource("3_fw7uq")]
+position = Vector2(327, 287)
