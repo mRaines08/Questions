@@ -41,6 +41,14 @@ func _on_icon_area_body_exited(body: Node2D) -> void:
 		#reset sprite
 		body.modulate = Color(Color.MEDIUM_PURPLE, 0.7)
 
+#assigns meta data to draggable icons
+func assign_meta():
+	if Global.adjective_list.has($word.text):
+		self.set_meta("type", "ADJECTIVE")
+	elif Global.verb_list.has($word.text):
+		self.set_meta("type", "VERB")
+	else:
+		self.set_meta("type", "NOUN")
 
 #runs every frame
 func _process(delta):

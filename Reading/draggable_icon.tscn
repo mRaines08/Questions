@@ -9,6 +9,7 @@ size = Vector2(73.5, 64.5)
 
 [node name="draggable_icon" type="Node2D"]
 script = ExtResource("1_wdkek")
+metadata/type = ""
 
 [node name="icon" type="Sprite2D" parent="."]
 position = Vector2(0, -2.27374e-13)
